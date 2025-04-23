@@ -24,6 +24,7 @@ const EditBook = () => {
         setPublishYear(response.data.publishYear);
         setLoading(false);
       })
+      
       .catch((error) => {
         setLoading(false);
         enqueueSnackbar('An error occurred. Please check the console.', { variant: 'error' });
